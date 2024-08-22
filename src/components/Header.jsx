@@ -17,14 +17,14 @@ const Header = () => {
             <a href='#' className='text-gray-300 mx-2 hover:text-white'>
               Customers
             </a>
-            <a
-              href='#'
-              className='bg-[#fdca3a] text-black px-4 py-2 rounded-full hover:bg-yellow-500 flex items-center'
-            >
-              <FaGithub className='mr-2' />
-              Login
-            </a>
           </nav>
+          <a
+            href='#'
+            className='bg-[#fdca3a] text-black px-4 py-2 rounded-full hover:bg-yellow-500 flex items-center'
+          >
+            <FaGithub className='mr-2' />
+            Login
+          </a>
         </div>
       </div>
     </header>
