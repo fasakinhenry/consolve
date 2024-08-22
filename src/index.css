@@ -4,7 +4,44 @@
 @tailwind components;
 @tailwind utilities;
 
-*,
-body {
+:root {
+  --max-width: 1200px;
+}
+
+* {
   font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+  background-color: #111111;
+  color: white;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.scroll-animation {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.scroll-animation.active {
+  opacity: 1;
+  transform: translateY(0);
 }
