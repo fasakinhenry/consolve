@@ -58,3 +58,66 @@ Consolve aims to be an AI-powered platform that bridges the gap between service 
 * **Technology Stack:** Consider adding more details about specific libraries or frameworks used within each layer.
 * **Timeline:** Adjust the timeline based on project complexity and team size.
 * **Business Strategy:** Expand on the specific strategies and tactics to be implemented.
+
+### Folder structure
+
+```bash
+/frontend
+│
+├── /public
+│   └── index.html
+│
+├── /src
+│   ├── /assets
+│   │   └── (images, fonts, etc.)
+│   ├── /components
+│   │   └── (reusable UI components)
+│   ├── /contexts
+│   │   └── (state management context)
+│   ├── /hooks
+│   │   └── (custom React hooks)
+│   ├── /layouts
+│   │   ├── AuthLayout.js  # for authentication-related pages
+│   │   └── AppLayout.js   # for the main application pages
+│   ├── /pages
+│   │   ├── home
+│   │   │   └── index.js           # Home page (dashboard)
+│   │   ├── profile
+│   │   │   └── index.js           # User profile page
+│   │   ├── services
+│   │   │   ├── index.js           # General services listing
+│   │   │   └── [serviceId].js     # Specific service details
+│   │   ├── companies
+│   │   │   ├── index.js           # Companies listing
+│   │   │   └── [companyId].js     # Specific company details
+│   │   ├── nearby
+│   │   │   └── index.js           # Nearby services and companies
+│   │   ├── marketplace
+│   │   │   ├── index.js           # Marketplace overview
+│   │   │   └── [productId].js     # Product details in the marketplace
+│   │   ├── reports
+│   │   │   └── index.js           # Reports and analytics page
+│   │   ├── events
+│   │   │   └── index.js           # Events and announcements
+│   │   ├── login
+│   │   │   └── index.js           # User login page
+│   │   ├── signup
+│   │   │   └── index.js           # User signup page
+│   │   ├── logout
+│   │   │   └── index.js           # User logout page
+│   │   └── unauthorized
+│   │       └── index.js           # Unauthorized access page
+│   ├── /services
+│   │   └── (API calls)
+│   ├── /utils
+│   │   └── (utility functions)
+│   ├── App.js
+│   ├── index.js
+│   └── tailwind.config.js
+│
+├── package.json
+├── .env
+├── .gitignore
+├── .prettierrc
+└── README.md
+```
