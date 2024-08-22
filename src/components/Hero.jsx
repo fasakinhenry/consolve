@@ -1,14 +1,39 @@
 import React from 'react';
+import { FaGithub } from 'react-icons/fa';
 
 const Hero = () => {
-    return (
-        <section className="text-center py-20">
-            <h1 className="text-6xl font-bold mb-4">Redefine How <span className="text-[#fdca3a]">&lt;/&gt;</span> Software</h1>
-            <h1 className="text-6xl font-bold mb-6">Is Built ⚡</h1>
-            <p className="text-xl mb-8">Turn every developer into a team of thousands.</p>
-            <a href="#" className="bg-[#fdca3a] text-black px-6 py-3 rounded-full hover:bg-yellow-500">Get Started</a>
-        </section>
-    );
+  return (
+    <section className='py-20'>
+      <div className='container'>
+        <div className='grid'>
+          <div className='col-span-12 text-center'>
+            <h1 className='text-5xl font-bold mb-4'>
+              Redefine How <span className='text-[#fdca3a]'>&lt;/&gt;</span>{' '}
+              Software
+            </h1>
+            <h1 className='text-5xl font-bold mb-6'>Is Built ⚡</h1>
+            <p className='text-xl mb-8'>
+              Turn every developer into a solo corporation
+            </p>
+            <a
+              href='#'
+              className='bg-[#fdca3a] text-black px-6 py-3 rounded-full hover:bg-yellow-500 inline-flex items-center'
+            >
+              <FaGithub className='mr-2' />
+              Join with GitHub
+            </a>
+          </div>
+        </div>
+        <div className='mt-16'>
+          <img
+            src='/dashboard-preview.png'
+            alt='Dashboard Preview'
+            className='w-full rounded-lg shadow-2xl'
+          />
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default Hero;
