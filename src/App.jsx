@@ -1,14 +1,14 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LandingPage from './pages/LandingPage';
 
 function App() {
   return (
     <Router>
-      <Switch>
+      <Routes>
         {/* Other routes */}
-        <Route path='/' exact component={LandingPage} />
-      </Switch>
+        <Route path='/' element={<LandingPage />} />
+      </Routes>
     </Router>
   );
 }
