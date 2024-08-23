@@ -7,12 +7,12 @@ const Hero = () => {
       <div className='container'>
         <div className='grid'>
           <div className='col-span-12 text-center'>
-            <h1 className='text-5xl font-bold mb-4'>
+            <h1 className='text-7xl font-black mb-4'>
               Redefine How <span className='text-[#fdca3a]'>&lt;/&gt;</span>{' '}
               Software
             </h1>
-            <h1 className='text-5xl font-bold mb-6'>Is Built ⚡</h1>
-            <p className='text-xl mb-8'>
+            <h1 className='text-7xl font-black mb-6'>Is Built ⚡</h1>
+            <p className='text-xl mb-8 font-bold text-[#fefefe]'>
               Turn every developer into a solo corporation
             </p>
             <a
@@ -24,7 +24,7 @@ const Hero = () => {
             </a>
           </div>
         </div>
-        <div className='mt-16'>
+        <div className='mt-32'>
           <img
             src='/dashboard-preview.png'
             alt='Dashboard Preview'
