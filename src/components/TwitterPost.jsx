@@ -14,7 +14,7 @@ const TwitterPost = ({ text, author, username, avatar }) => {
           <p className='text-gray-400'>@{username}</p>
         </div>
       </div>
-      <p className='mb-4'>{text}</p>
+      <p className='mb-4 whitespace-pre-wrap'>{text}</p>
       <div className='flex items-center text-gray-400'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
