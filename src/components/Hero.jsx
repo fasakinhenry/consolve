@@ -6,8 +6,8 @@ const Hero = () => {
     <section className='py-20'>
       <div className='container'>
         <div className='grid'>
-          <div className='col-span-12 text-center'>
-            <h1 className='text-7xl font-black mb-4'>
+          <div className='col-span-12 text-center p-5'>
+            <h1 className='text-7xl font-black mb-4 mt-16'>
               Redefine How <span className='text-[#fdca3a]'>&lt;/&gt;</span>{' '}
               Software
             </h1>
