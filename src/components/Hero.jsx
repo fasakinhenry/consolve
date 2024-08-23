@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaGithub } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -15,13 +16,13 @@ const Hero = () => {
             <p className='text-xl mb-8 font-bold text-[#fefefe]'>
               Turn every developer into a solo corporation
             </p>
-            <a
-              href='#'
+            <Link
+              to='/login'
               className='bg-[#fdca3a] text-black px-6 py-3 rounded-full hover:bg-yellow-500 inline-flex items-center'
             >
               <FaGithub className='mr-2' />
               Join with GitHub
-            </a>
+            </Link>
           </div>
         </div>
         <div className='mt-32'>
