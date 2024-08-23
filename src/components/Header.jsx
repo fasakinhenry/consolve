@@ -3,7 +3,7 @@ import { FaGithub } from 'react-icons/fa';
 
 const Header = () => {
   return (
-    <header className='py-4'>
+    <header className='py-4 fixed w-full backdrop-blur-md'>
       <div className='container'>
         <div className='flex justify-between items-center'>
           <div className='flex items-center'>
