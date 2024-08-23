@@ -13,6 +13,24 @@ const LandingPage = () => {
       username: 'janedoe',
       avatar: 'https://via.placeholder.com/48',
     },
+    {
+      text: "Tuliban has completely transformed how I approach software development. It's revolutionary!",
+      author: 'Jane Doe',
+      username: 'janedoe',
+      avatar: 'https://via.placeholder.com/48',
+    },
+    {
+      text: "Tuliban has completely transformed how I approach software development. It's revolutionary!",
+      author: 'Jane Doe',
+      username: 'janedoe',
+      avatar: 'https://via.placeholder.com/48',
+    },
+    {
+      text: "Tuliban has completely transformed how I approach software development. It's revolutionary!",
+      author: 'Jane Doe',
+      username: 'janedoe',
+      avatar: 'https://via.placeholder.com/48',
+    },
     // Add more tweets here
   ];
 
@@ -31,19 +49,19 @@ const LandingPage = () => {
             title='Become a Creator'
             description='The future belongs to software creators. Tap into a global talent pool to build scalable solutions faster than ever before.'
             linkText='Learn More'
-            image='/feature-creator.jpg'
+            image='/become-creator.png'
           />
           <FeatureCard
             title='Discover Opportunities'
             description='Connect with a global marketplace of software development opportunities and innovative projects.'
             linkText='Explore More'
-            image='/feature-opportunities.jpg'
+            image='/discover-opportunities.png'
           />
           <FeatureCard
             title='Build At Scale'
             description='Leverage our platform to build complex software solutions with ease, accessing top talent worldwide.'
             linkText='Start Building'
-            image='/feature-scale.jpg'
+            image='/build-at-scale.png'
           />
         </div>
       </Section>
