@@ -7,8 +7,8 @@ const Header = () => {
       <div className='container'>
         <div className='flex justify-between items-center'>
           <div className='flex items-center'>
-            <img src='/tuliban-logo.png' alt='Tuliban' className='h-8 mr-2' />
-            <span className='text-xl font-bold text-[#fdca3a]'>tuliban</span>
+            <img src='/consolve-logo.png' alt='Consolve' className='h-8 mr-2' />
+            <span className='text-xl font-bold text-[#fdca3a]'>Consolve</span>
           </div>
           <nav className='flex items-center'>
             <a href='#' className='text-gray-300 mx-2 hover:text-white'>
