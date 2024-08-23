@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import MainLayout from '../layouts/MainLayout';
 import Hero from '../components/Hero';
 import Section from '../components/Section';
@@ -6,34 +6,14 @@ import FeatureCard from '../components/FeatureCard';
 import TwitterFeed from '../components/TwitterFeed';
 
 const LandingPage = () => {
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('active');
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    document.querySelectorAll('.scroll-animation').forEach((el) => {
-      observer.observe(el);
-    });
-
-    return () => observer.disconnect();
-  }, []);
-
   const tweets = [
-    // Add more tweets here
     {
       text: "Tuliban has completely transformed how I approach software development. It's revolutionary!",
       author: 'Jane Doe',
       username: 'janedoe',
       avatar: 'https://via.placeholder.com/48',
     },
-    // ... more tweets
+    // Add more tweets here
   ];
 
   return (
