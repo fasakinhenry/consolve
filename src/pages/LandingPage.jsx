@@ -1,5 +1,5 @@
 import React from 'react';
-import MainLayout from '../layouts/MainLayout';
+import LandingLayout from '../layouts/LandingLayout';
 import Hero from '../components/Hero';
 import Section from '../components/Section';
 import FeatureCard from '../components/FeatureCard';
@@ -35,7 +35,7 @@ const LandingPage = () => {
   ];
 
   return (
-    <MainLayout>
+    <LandingLayout>
       <Hero />
       <Section title='Connecting Communities to Services' centered>
         <p className='text-xl mb-8'>
@@ -85,7 +85,7 @@ const LandingPage = () => {
           </a>
         </div>
       </Section>
-    </MainLayout>
+    </LandingLayout>
   );
 };
 

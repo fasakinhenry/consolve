@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
-const MainLayout = ({ children }) => {
+const LandingLayout = ({ children }) => {
   return (
     <div className='bg-black text-white font-sans'>
       <Header />
@@ -12,4 +12,4 @@ const MainLayout = ({ children }) => {
   );
 };
 
-export default MainLayout;
+export default LandingLayout;
