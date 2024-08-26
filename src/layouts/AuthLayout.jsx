@@ -1,34 +1,19 @@
-// src/layouts/AuthLayout.jsx
 import React from 'react';
 
-const AuthLayout = ({ children, stage, lightColor, infoText }) => {
+const AuthLayout = ({ children }) => {
   return (
     <div className="flex h-screen">
-      <div className="w-1/2 relative overflow-hidden">
-        <div 
-          className="absolute inset-0" 
-          style={{
-            background: `radial-gradient(circle at top left, ${lightColor}, transparent 70%)`,
-          }}
-        ></div>
-        <img src="/tuliban-logo.png" alt="Tuliban" className="absolute top-10 left-10 h-12" />
-        <div className="absolute bottom-10 left-10 right-10 bg-black bg-opacity-20 backdrop-blur-md rounded-lg p-4">
-          <p className="text-white">{infoText}</p>
+      {/* Left Column with Light Bar and Image */}
+      <div className="w-1/2 relative flex justify-center items-center bg-black">
+        <div className="absolute inset-0 z-10 bg-gradient-to-r from-yellow-400 to-transparent opacity-80 animate-pulse"></div>
+        <div className="relative z-20">
+          {/* Replace this with your image path */}
+          <img src="/path/to/your/image.png" alt="Logo" className="mx-auto" />
         </div>
       </div>
-      <div className="w-1/2 bg-[#111111] p-10 flex flex-col justify-between">
-        <div>
-          <div className="h-1 bg-gray-700 rounded-full mb-8">
-            <div 
-              className="h-full bg-[#fdca3a] rounded-full transition-all duration-300 ease-in-out" 
-              style={{ width: `${stage * 20}%` }}
-            ></div>
-          </div>
-          {children}
-        </div>
-        <button className="text-gray-400 hover:text-white">
-          Already have an account? Sign in
-        </button>
+      {/* Right Column with Form */}
+      <div className="w-1/2 flex justify-center items-center bg-gray-900 text-white">
+        <div className="w-3/4">{children}</div>
       </div>
     </div>
   );

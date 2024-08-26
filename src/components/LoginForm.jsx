@@ -1,66 +1,56 @@
-// src/components/LoginForm.jsx
 import React, { useState } from 'react';
 
-const LoginForm = ({ stage, onNext }) => {
+const LoginForm = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     location: '',
   });
+  const [isFormValid, setIsFormValid] = useState(false);
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    onNext();
+    // Check if all fields are filled
+    const allFilled = Object.values({ ...formData, [name]: value }).every(
+      (field) => field !== ''
+    );
+    setIsFormValid(allFilled);
   };
-
-  const renderInput = (name, placeholder) => (
-    <div className="mb-4 relative">
-      <input
-        type={name === 'email' ? 'email' : 'text'}
-        name={name}
-        value={formData[name]}
-        onChange={handleChange}
-        placeholder={placeholder}
-        className="w-full bg-[#1a1a1a] border border-gray-700 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-[#fdca3a]"
-        required
-      />
-      {formData[name] && (
-        <span className="absolute right-3 top-3 text-green-500">✓</span>
-      )}
-    </div>
-  );
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h2 className="text-2xl font-bold mb-6 text-white">Share a bit more about you</h2>
-      <p className="text-gray-400 mb-8">From time to time, we will reach out with projects, opportunities, and connections</p>
-      
-      {stage === 1 && (
-        <>
-          {renderInput('name', 'Full Name')}
-          {renderInput('email', 'Email')}
-          {renderInput('location', 'Location')}
-        </>
-      )}
-      
-      {stage === 2 && (
-        <>
-          <button className="w-full py-2 bg-blue-600 text-white rounded-lg mb-4 flex items-center justify-center">
-            <img src="/linkedin-icon.png" alt="LinkedIn" className="mr-2 h-5 w-5" />
-            Import LinkedIn Bio
-          </button>
-          {renderInput('twitter', 'https://twitter.com/username')}
-          {renderInput('stackoverflow', 'https://stackoverflow.com/users/id/username')}
-        </>
-      )}
-      
+    <form className='space-y-6'>
+      <h2 className='text-3xl font-bold mb-4'>Share a bit more about you</h2>
+      <p className='text-gray-400 mb-6'>
+        From time to time, we will reach out with projects, opportunities, and
+        connections.
+      </p>
+
+      {Object.keys(formData).map((field, index) => (
+        <div key={index} className='relative'>
+          <input
+            type='text'
+            name={field}
+            value={formData[field]}
+            onChange={handleChange}
+            placeholder={field.charAt(0).toUpperCase() + field.slice(1)}
+            className='w-full border-b-2 border-gray-600 bg-transparent py-2 text-white placeholder-gray-500 outline-none focus:border-yellow-500'
+          />
+          {formData[field] && (
+            <span className='absolute right-0 top-0 text-green-500 mt-2'>
+              &#10003;
+            </span>
+          )}
+        </div>
+      ))}
+
       <button
-        type="submit"
-        className="w-full py-2 bg-[#fdca3a] text-black rounded-lg hover:bg-yellow-500 transition duration-300"
+        type='submit'
+        className={`w-full py-2 mt-4 text-center text-black bg-yellow-400 rounded ${
+          !isFormValid ? 'opacity-50 cursor-not-allowed' : ''
+        }`}
+        disabled={!isFormValid}
       >
         Next
       </button>
