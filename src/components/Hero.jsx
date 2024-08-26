@@ -4,17 +4,19 @@ import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
-    <section className='py-20'>
-      <div className='container'>
-        <div className='grid'>
-          <div className='col-span-12 text-center p-5'>
-            <h1 className='text-7xl font-black mb-4 mt-16'>
-              Redefine How <span className='text-[#fdca3a]'>&lt;/&gt;</span>{' '}
-              Software
+    <section className='py-10 md:py-20'>
+      <div className='container mx-auto px-4'>
+        <div className='grid grid-cols-1 md:grid-cols-12 gap-4'>
+          <div className='md:col-span-12 text-left md:text-center p-5'>
+            <h1 className='text-4xl md:text-6xl lg:text-7xl font-black mb-4 mt-10 md:mt-16 leading-tight'>
+              Connect with{' '}
+              <span className='text-[#fdca3a]'>Local Services</span> 👨‍🔧
             </h1>
-            <h1 className='text-7xl font-black mb-6'>Is Built ⚡</h1>
-            <p className='text-xl mb-8 font-bold text-[#fefefe]'>
-              Turn every developer into a solo corporation
+            <h1 className='text-4xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight'>
+              in Your <span className='text-[#fdca3a]'>Community 🌍</span>
+            </h1>
+            <p className='text-lg md:text-xl lg:text-2xl mb-8 font-bold text-[#fefefe]'>
+              Access essential services near you with ease.
             </p>
             <Link
               to='/login'
@@ -25,7 +27,7 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-        <div className='mt-32'>
+        <div className='mt-16 md:mt-32'>
           <img
             src='/dashboard-preview.png'
             alt='Dashboard Preview'
