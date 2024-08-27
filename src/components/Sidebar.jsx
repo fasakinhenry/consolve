@@ -13,6 +13,7 @@ import {
   Profile2User,
   LogoutCurve,
   Calendar,
+  truck,
   Wallet3
 } from 'iconsax-react';
 
@@ -24,7 +25,7 @@ const sidebarItems = [
   { name: 'Community', icon: Profile2User, path: '/community' },
   { name: 'Services', icon: Code, path: '/services' },
   { name: 'Wallet', icon: Wallet3, path: '/wallet' },
-  { name: 'Logistics', icon: Command, path: '/logistics' },
+  { name: 'Logistics', icon: truck, path: '/logistics' },
   { name: 'Bounties', icon: Cup, path: '/bounties' },
   { name: 'Events', icon: Command, path: '/events' },
   { name: 'Tools', icon: Command, path: '/tools' },
