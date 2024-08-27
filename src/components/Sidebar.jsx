@@ -3,31 +3,32 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import {
   Activity,
-  Notification,
-  Command,
-  Code,
-  MessageQuestion,
   Cup,
   Discover,
-  //   DiscordLogo,
   Profile2User,
   LogoutCurve,
   Calendar,
   Wallet3,
+  Briefcase,
+  TruckFast,
+  NotificationBing,
+  MenuBoard,
+  Magicpen,
+  Setting
 } from 'iconsax-react';
 
 const sidebarItems = [
   { name: 'Dashboard', icon: Activity, path: '/dashboard' },
   { name: 'Providers', icon: Discover, path: '/providers' },
-  { name: 'Inbox', icon: Notification, path: '/inbox' },
+  { name: 'Inbox', icon: NotificationBing, path: '/inbox' },
   { name: 'Appointments', icon: Calendar, path: '/appointments' },
   { name: 'Community', icon: Profile2User, path: '/community' },
-  { name: 'Services', icon: Code, path: '/services' },
+  { name: 'Services', icon: Briefcase, path: '/services' },
   { name: 'Wallet', icon: Wallet3, path: '/wallet' },
-  { name: 'Logistics', icon: Command, path: '/logistics' },
+  { name: 'Logistics', icon: TruckFast, path: '/logistics' },
   { name: 'Bounties', icon: Cup, path: '/bounties' },
-  { name: 'Events', icon: Command, path: '/events' },
-  { name: 'Tools', icon: Command, path: '/tools' },
+  { name: 'Events', icon: MenuBoard, path: '/events' },
+  { name: 'Tools', icon: Magicpen, path: '/tools' },
 ];
 
 const Sidebar = ({ isOpen, setIsOpen }) => {
@@ -84,7 +85,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
         <div className='absolute bottom-0 w-full'>
           <div className='flex items-center px-4 py-2 mt-2 text-gray-100'>
             <img
-              src='/path-to-profile-pic.jpg'
+              src='/profile2.jpg'
               alt='Profile'
               className='h-8 w-8 rounded-full mr-2'
             />
@@ -121,7 +122,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
                 to='/settings'
                 className='flex items-center px-4 py-2 text-gray-100 hover:bg-gray-600'
               >
-                <Command className='h-5 w-5 mr-3' />
+                <Setting className='h-5 w-5 mr-3' />
                 Settings
               </NavLink>
               <button className='flex items-center w-full px-4 py-2 text-gray-100 hover:bg-gray-600'>
