@@ -13,8 +13,7 @@ import {
   Profile2User,
   LogoutCurve,
   Calendar,
-  truck,
-  Wallet3
+  Wallet3,
 } from 'iconsax-react';
 
 const sidebarItems = [
@@ -25,7 +24,7 @@ const sidebarItems = [
   { name: 'Community', icon: Profile2User, path: '/community' },
   { name: 'Services', icon: Code, path: '/services' },
   { name: 'Wallet', icon: Wallet3, path: '/wallet' },
-  { name: 'Logistics', icon: truck, path: '/logistics' },
+  { name: 'Logistics', icon: Command, path: '/logistics' },
   { name: 'Bounties', icon: Cup, path: '/bounties' },
   { name: 'Events', icon: Command, path: '/events' },
   { name: 'Tools', icon: Command, path: '/tools' },
@@ -37,7 +36,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
   return (
     <>
       <div
-        className={`fixed inset-y-0 left-0 z-30 w-64 bg-[#121212] transition duration-300 transform ${
+        className={`fixed inset-y-0 left-0 z-30 w-64 bg-[#121212] transition duration-300 transform border-r-[1px   ] border-[#888888] ${
           isOpen ? 'translate-x-0' : '-translate-x-full'
         } lg:translate-x-0 lg:static lg:inset-0`}
       >
@@ -48,7 +47,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
               alt='Logo'
               className='h-8 w-10 mr-2'
             />
-            <span className='text-xl font-semibold'>Tublian</span>
+            <span className='text-xl font-semibold'>Consolve</span>
           </div>
           <button onClick={() => setIsOpen(false)} className='lg:hidden'>
             <svg
