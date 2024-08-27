@@ -1,19 +1,20 @@
+// src/layouts/MainLayout.jsx
 import React, { useState } from 'react';
-import { Sidebar } from '@/components/Sidebar';
-import ProfileDropdown from '../components/ProfileDropdown';
+import Sidebar from '../components/Sidebar';
+import AppHeader from '../components/AppHeader';
 
 const MainLayout = ({ children }) => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
-  const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState(false);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
-    <div className='flex'>
-      <Sidebar isOpen={isSidebarOpen} />
-      <div className='flex-1'>
-        {/* Add Navbar with hamburger on smaller screens */}
-        <main>{children}</main>
+    <div className="flex h-screen bg-gray-900 text-white">
+      <Sidebar isOpen={sidebarOpen} setIsOpen={setSidebarOpen} />
+      <div className="flex-1 flex flex-col overflow-hidden">
+        <AppHeader toggleSidebar={() => setSidebarOpen(!sidebarOpen)} />
+        <main className="flex-1 overflow-x-hidden overflow-y-auto bg-gray-900 p-6">
+          {children}
+        </main>
       </div>
-      {isProfileDropdownOpen && <ProfileDropdown />}
     </div>
   );
 };
