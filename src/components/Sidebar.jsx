@@ -13,6 +13,7 @@ import {
   Profile2User,
   LogoutCurve,
   Calendar,
+  Wallet3
 } from 'iconsax-react';
 
 const sidebarItems = [
@@ -22,7 +23,7 @@ const sidebarItems = [
   { name: 'Appointments', icon: Calendar, path: '/appointments' },
   { name: 'Community', icon: Profile2User, path: '/community' },
   { name: 'Services', icon: Code, path: '/services' },
-  { name: 'Wallet', icon: Command, path: '/wallet' },
+  { name: 'Wallet', icon: Wallet3, path: '/wallet' },
   { name: 'Logistics', icon: Command, path: '/logistics' },
   { name: 'Bounties', icon: Cup, path: '/bounties' },
   { name: 'Events', icon: Command, path: '/events' },
@@ -35,7 +36,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
   return (
     <>
       <div
-        className={`fixed inset-y-0 left-0 z-30 w-64 bg-gray-800 transition duration-300 transform ${
+        className={`fixed inset-y-0 left-0 z-30 w-64 bg-[#121212] transition duration-300 transform ${
           isOpen ? 'translate-x-0' : '-translate-x-full'
         } lg:translate-x-0 lg:static lg:inset-0`}
       >
@@ -70,8 +71,8 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
               key={item.name}
               to={item.path}
               className={({ isActive }) =>
-                `flex items-center px-4 py-2 mt-2 text-gray-100 rounded-lg hover:bg-gray-700 ${
-                  isActive ? 'bg-gray-700' : ''
+                `flex items-center px-4 py-2 mt-2 text-gray-100 rounded-lg hover:bg-[#292929] ${
+                  isActive ? 'bg-[#292929]' : ''
                 }`
               }
             >
@@ -108,7 +109,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
             </button>
           </div>
           {showProfileMenu && (
-            <div className='bg-gray-700 py-2'>
+            <div className='bg-[#292929] py-2'>
               <NavLink
                 to='/profile'
                 className='flex items-center px-4 py-2 text-gray-100 hover:bg-gray-600'
