@@ -42,9 +42,9 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
         <div className='flex items-center justify-between h-16 px-6'>
           <div className='flex items-center'>
             <img
-              src='/path-to-your-logo.png'
+              src='/consolve-logo.png'
               alt='Logo'
-              className='h-8 w-8 mr-2'
+              className='h-8 w-10 mr-2'
             />
             <span className='text-xl font-semibold'>Tublian</span>
           </div>
