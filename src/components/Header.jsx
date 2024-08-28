@@ -52,7 +52,7 @@ const Header = () => {
               href='#'
               className='bg-[#fdca3a] text-black px-4 py-2 rounded-full hover:bg-yellow-500 flex items-center mt-2'
             >
-              <FaGithub className='mr-2' />
+              {/* <FaGithub className='mr-2' /> */}
               Login
             </a>
           </nav>
