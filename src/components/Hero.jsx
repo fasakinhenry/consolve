@@ -22,7 +22,7 @@ const Hero = () => {
               to='/dashboard'
               className='bg-[#fdca3a] text-black px-6 py-3 rounded-full hover:bg-yellow-500 inline-flex items-center'
             >
-              <FaGithub className='mr-2' />
+              {/* <FaGithub className='mr-2' /> */}
               Get started now
             </Link>
           </div>
