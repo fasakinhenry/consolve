@@ -23,7 +23,7 @@ const Hero = () => {
               className='bg-[#fdca3a] text-black px-6 py-3 rounded-full hover:bg-yellow-500 inline-flex items-center'
             >
               <FaGithub className='mr-2' />
-              Join with GitHub
+              Get started now
             </Link>
           </div>
         </div>
