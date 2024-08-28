@@ -19,7 +19,7 @@ const Hero = () => {
               Access essential services near you with ease.
             </p>
             <Link
-              to='/login'
+              to='/dashboard'
               className='bg-[#fdca3a] text-black px-6 py-3 rounded-full hover:bg-yellow-500 inline-flex items-center'
             >
               <FaGithub className='mr-2' />
@@ -29,7 +29,7 @@ const Hero = () => {
         </div>
         <div className='mt-16 md:mt-32'>
           <img
-            src='/dashboard-preview.png'
+            src='/dashboard-preview2.png'
             alt='Dashboard Preview'
             className='w-full rounded-lg shadow-2xl'
           />
