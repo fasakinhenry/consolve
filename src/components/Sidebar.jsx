@@ -14,7 +14,7 @@ import {
   NotificationBing,
   MenuBoard,
   Magicpen,
-  Setting
+  Setting,
 } from 'iconsax-react';
 
 const sidebarItems = [
@@ -42,14 +42,14 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
         } lg:translate-x-0 lg:static lg:inset-0`}
       >
         <div className='flex items-center justify-between h-16 px-6'>
-          <div className='flex items-center'>
+          <Link to='/' className='flex items-center cursor-pointer'>
             <img
               src='/consolve-logo.png'
               alt='Logo'
               className='h-8 w-10 mr-2'
             />
             <span className='text-xl font-semibold'>Consolve</span>
-          </div>
+          </Link>
           <button onClick={() => setIsOpen(false)} className='lg:hidden'>
             <svg
               className='h-6 w-6'
