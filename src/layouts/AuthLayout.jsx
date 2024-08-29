@@ -12,8 +12,8 @@ const AuthLayout = ({ children, stage, lightColor, infoText }) => {
           }}
         ></div>
         <img
-          src='/tuliban-logo.png'
-          alt='Tuliban'
+          src='/consolve-logo.png'
+          alt='Consolve'
           className='absolute top-10 left-10 h-12'
         />
         <div className='absolute bottom-10 left-10 right-10 bg-black bg-opacity-20 backdrop-blur-md rounded-lg p-4'>
