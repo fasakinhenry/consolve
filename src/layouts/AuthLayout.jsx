@@ -20,7 +20,7 @@ const AuthLayout = ({ children, stage, lightColor, infoText }) => {
           <p className='text-white'>{infoText}</p>
         </div>
       </div>
-      <div className='w-full md:w-1/2 bg-[#111111] p-10 flex flex-col justify-between items-center'>
+      <div className='w-full md:w-1/2 bg-[#111111] p-10 flex flex-col justify-center items-center h-[97vh] m-auto'>
         <div className='w-full max-w-md h-[97vw] flex flex-col justify-center'>
           <div className='flex h-1 bg-gray-700 rounded-full mb-8'>
             <div
@@ -30,7 +30,7 @@ const AuthLayout = ({ children, stage, lightColor, infoText }) => {
           </div>
           {children}
         </div>
-        <button className='text-gray-400 hover:text-white mt-6'>
+        <button className='text-gray-400 hover:text-white mt-6 cursor-pointer'>
           Already have an account? Sign in
         </button>
       </div>
