@@ -1,9 +1,9 @@
-## Consolve: A General Service Connector App
+# Consolve: A General Service Connector App
 
-### Objective
+## Objective
 Consolve aims to be an AI-powered platform that bridges the gap between service providers and users across various sectors. It will improve access to local services, enhance user engagement, and provide a seamless experience for communities.
 
-### Key Features
+## Key Features
 
 #### Core Functionality
 * **Service Directory:** Comprehensive list of services, categorized by sector, location, and service type.
