@@ -5,7 +5,7 @@ Consolve aims to be an AI-powered platform that bridges the gap between service 
 
 ## Key Features
 
-#### Core Functionality
+### Core Functionality
 * **Service Directory:** Comprehensive list of services, categorized by sector, location, and service type.
 * **Nearby Companies and Services:** Location-based search, geo-fencing, and notifications.
 * **User Profiles:** Profiles for service providers and users.
@@ -20,7 +20,7 @@ Consolve aims to be an AI-powered platform that bridges the gap between service 
 * **Offline Access:** Offline capabilities for areas with poor internet connectivity.
 * **Admin Dashboard:** Dashboard for managing service listings, user activity, payments, and analytics.
 
-#### Sidebar Features
+### Sidebar Features
 * **Home:** Dashboard overview, notifications, and quick access to key services.
 * **Services:** Service directory, nearby services.
 * **My Activity:** Bookings, transactions, reports, and feedback.
@@ -31,7 +31,7 @@ Consolve aims to be an AI-powered platform that bridges the gap between service 
 * **Resources:** News, updates, resource library.
 * **Logistics:** Get logistics for services.
 
-### Technology Stack
+## Technology Stack
 * **Frontend:** React.js with Tailwind CSS
 * **Backend:** Node.js with Express
 * **Database:** MongoDB
@@ -40,26 +40,26 @@ Consolve aims to be an AI-powered platform that bridges the gap between service 
 * **Deployment:** Heroku, Vercel, or AWS
 * **CI/CD:** Continuous integration/continuous deployment pipeline
 
-### Timeline (6 Days)
+## Timeline (6 Days)
 * **Day 1-2:** Define core functionality, create wireframes, set up project repository, initialize MERN stack.
 * **Day 3:** Develop service directory, user profiles, authentication system, and start frontend UI.
 * **Day 4:** Implement AI recommendations, booking system, communication hub, and community features.
 * **Day 5:** Finalize payment integration, secure the platform, test offline capabilities, and multi-language support.
 * **Day 6:** Final testing, bug fixes, optimization, and prepare for pitch.
 
-### Business Strategy
+## Business Strategy
 * **User Retention:** Loyalty programs, gamification, personalized experience.
 * **Service Provider Retention:** Business growth tools, premium listings, subscription models.
 * **Revenue Generation:** Commission-based model, advertising, freemium model, data insights.
 * **User and Service Provider Engagement:** Community building, AI-powered notifications, performance incentives, training and support.
 
-### Additional Notes
+## Additional Notes
 * **Sidebar Features:** Include a detailed breakdown of the features in the sidebar for clarity.
 * **Technology Stack:** Consider adding more details about specific libraries or frameworks used within each layer.
 * **Timeline:** Adjust the timeline based on project complexity and team size.
 * **Business Strategy:** Expand on the specific strategies and tactics to be implemented.
 
-### Folder structure
+## Folder structure
 
 ```bash
 /frontend
